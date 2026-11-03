@@ -345,3 +345,4 @@ button { border:0; background:none; font:inherit; color:inherit; cursor:pointer;
 .fig-pt circle { fill:var(--accent-ink); }
 .fig-pt circle.hollow { fill:none; stroke:var(--accent-ink); stroke-width:1.2; }
 .fig-base.dash { stroke-dasharray:2 3; }
+.fig-bar-target { fill:none; stroke:var(--accent-ink); stroke-width:1.2; stroke-dasharray:3 2.5; }

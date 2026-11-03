@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Cerenome, Inc. — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Cerenome, Inc. — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://media-console-group.github.io/cerenome-ir-concept/
+  Styled from the company's own CORPORATE website (https://cerenome.com/), not the IR
+  landing page that Concepts A-C are built from: its white header + logo
+  lockup, heading/body fonts, palette, accent underline bars, button style
+  and footer strip. "Homepage in miniature": each slide is one module of the
+  corporate homepage, alternating photo and light grounds. The reference build
+  (an earlier build) used:
+    1 hero -> 2 stats pattern -> 3 image + text split -> 4 violet gradient band.
+  Module classes (m-hero / m-stats / m-split / m-band) and the shared parts
+  (d-stat, d-list, d-arrows) live in style.css; every colour is a :root token
+  filled from brand.json "corp". Re-module a slide if the site has no such
+  module. Photos are the site's own photography, cropped into assets/;
+  assets/logo.svg is the site's own logo file. Every claim comes from the
+  project fact sheet (.tmp/facts.md).
+-->
+
+<div id="banner" aria-label="Cerenome, Inc. investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1 — Overview -->
+    <section class="slide m-hero" data-index="0">
+      <!-- Module: cerenome.com homepage hero: the full-bleed "Patient portrayal" photo (the company's own label),
+           white serif "Think it solvable." and the company's platform sentence, here in a violet panel.
+           Facts: [HOME] hero copy; [8-K Aug 4] name change from Plus Therapeutics, Inc. and Nasdaq symbol CNSY (was PSTV) effective Aug 3, 2026. -->
+      <img class="d-photo" src="assets/slide-1.jpg" alt="Portrait of a smiling child; the company labels it a patient portrayal">
+      <span class="portrayal">Patient portrayal</span>
+      <div class="hero-panel">
+        <h2>Think it solvable.</h2>
+        <p class="hero-desc">Plus Therapeutics is now Cerenome (Nasdaq: CNSY, formerly PSTV): diagnostics, targeted therapeutics and patient data in one CNS oncology platform, as the company describes it.</p>
+      </div>
+    </section>
+
+    <!-- Slide 2 — Proof: CNSide -->
+    <section class="slide m-stats" data-index="1">
+      <!-- Module: cerenome.com "How we're changing CNS cancer care" / Diagnostics block, as the homepage's stats pattern:
+           navy serif heading, three figures over gradient bars.
+           Facts: [HOME] CNSide "detects, characterizes, and monitors CNS cancer from cerebrospinal fluid";
+           [PR Oct 8] 11,000+ tests since 2020 at 120+ U.S. cancer institutions (company); [10-Q Aug 14] all revenue is grant revenue, diagnostic revenue immaterial; laboratory-developed test [10-K]. -->
+      <div class="stats-head">
+        <h2>CNSide<sup>®</sup>: Testing for CNS Cancer from Spinal Fluid</h2>
+        <p>A laboratory-developed test that the company says detects, characterizes and monitors CNS cancer.</p>
+      </div>
+      <div class="d-stats">
+        <div class="d-stat">
+          <p class="d-value">11,000+</p>
+          <p class="d-label">CNSide tests performed since 2020, per the company</p>
+        </div>
+        <div class="d-stat">
+          <p class="d-value">120+</p>
+          <p class="d-label">U.S. cancer institutions where tests were performed, per the company</p>
+        </div>
+        <div class="d-stat">
+          <p class="d-value">100%</p>
+          <p class="d-label">of revenue in the Jun&nbsp;30 10-Q was grant revenue</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3 — REYOBIQ -->
+    <section class="slide m-split" data-index="2">
+      <!-- Module: cerenome.com "Why now?" image + white card split: the module's own coral and violet artwork over a white
+           card, coral serif heading, navy bars.
+           Facts: [PR Oct 29] ReSPECT-GBM Phase 2 enrollment complete, 32 treated at the Phase 2 dose (34 planned), topline expected mid-2027,
+           direct infusion into the tumor by CED catheters; [PR] "investigational and has not been approved by the FDA ... for any use". -->
+      <figure class="split-fig">
+        <img class="split-photo" src="assets/slide-3.jpg" alt="Violet fibre-tract artwork on a coral ground, from the company's website">
+        <figcaption>Company artwork</figcaption>
+      </figure>
+      <div class="split-card">
+        <h2>REYOBIQ™: Phase 2 Enrollment Complete</h2>
+        <ul class="d-list">
+          <li>An investigational radiotherapeutic given by direct infusion into the tumor in recurrent glioblastoma.
+            <ul class="d-arrows">
+              <li>32 patients treated at the Phase 2 dose (34 planned)</li>
+              <li>Topline data expected mid&#8209;2027</li>
+              <li>Not FDA-approved for any use</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4 — Financials -->
+    <section class="slide m-band" data-index="3">
+      <!-- Module: cerenome.com violet gradient band (the stock module's ground, without its share quote), centred white serif title and copy.
+           Facts: [10-Q Aug 14] cash $2.37M, investments $6.22M at Jun 30; $13.37M cash used in operations, six months; going-concern doubt; more funding needed;
+           [8-K Sep 10] senior secured convertible notes of up to $21,276,596 agreed Sep 4, secured by substantially all assets. -->
+      <div class="band-content">
+        <h2>The Funding Picture</h2>
+        <p class="band-desc">The 10-Q states substantial doubt about the company's ability to continue as a going concern.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">$2.4M</p>
+            <p class="d-label">Cash at Jun&nbsp;30, plus $6.2M investments</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">$13.4M</p>
+            <p class="d-label">Cash used in operations, six months</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">$21.3M</p>
+            <p class="d-label">Up to, secured convertible notes agreed Sep&nbsp;4</p>
+          </div>
+        </div>
+        <p class="band-note">More funding is needed. The notes are secured by substantially all assets and convertible into shares.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.svg" alt="Cerenome, Inc." width="136" height="28">
+    <span id="ticker">NASDAQ:&nbsp;CNSY</span>
+  </header>
+
+  <!-- Slider controls: round navy buttons, like the homepage slider's pause control -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Platform"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: CNSide"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: REYOBIQ"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Funding"></button>
+    </div>
+
+    <!-- The corporate site's .btn: radius/gradient border from brand.json corp, arrow after the label -->
+    <a href="#" id="cta">
+      <span>More for investors</span>
+      <svg id="cta-arrow" viewBox="0 0 24 25" aria-hidden="true"><path d="M12 4.18066L10.585 5.59566L16.17 11.1807H4V13.1807H16.17L10.585 18.7657L12 20.1807L20 12.1807L12 4.18066Z"/></svg>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls"><span>Forward-looking statements: trial timing and results; cash, funding and dilution; going-concern doubt (10-Q, Aug 14, 2026); secured convertible notes (Sep 2026); CNSide reimbursement; Nasdaq listing. REYOBIQ is investigational and not FDA-approved. See SEC filings.</span></p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
